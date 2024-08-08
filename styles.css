@@ -7,13 +7,14 @@ body {
     height: 100vh;
     margin: 0;
     overflow-y: auto; /* Allows scrolling if necessary */
+    padding: 10px; /* Ensure padding around the body */
 }
 
 .card {
     background: white;
-    width: 90%;
+    width: 100%;
     max-width: 350px;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: transform 0.3s;
@@ -28,12 +29,12 @@ body {
     background: #4ca1af;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 .profile-png {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
@@ -41,20 +42,21 @@ body {
 
 .name {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .title {
     margin: 5px 0 0;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .content {
-    padding: 20px;
+    padding: 15px;
 }
 
 .content h2 {
     margin-top: 0;
+    font-size: 1.1em;
 }
 
 .experience-list, .links-list {
@@ -64,6 +66,7 @@ body {
 
 .experience-list li, .links-list li {
     margin: 10px 0;
+    font-size: 0.9em;
 }
 
 .links-list a {
@@ -83,22 +86,13 @@ body {
     color: #7f8c8d;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .header {
-        padding: 15px;
+/* Ensure the card fits within the screen height */
+@media (max-height: 600px) {
+    .card {
+        margin: 10px 0;
     }
 
-    .profile-img {
-        width: 70px;
-        height: 70px;
-    }
-
-    .content {
-        padding: 15px;
-    }
-
-    .footer {
+    .header, .content, .footer {
         padding: 10px;
     }
 }
