@@ -30,6 +30,7 @@ body {
     color: white;
     text-align: center;
     padding: 15px;
+
 }
 
 .profile-png {
@@ -54,9 +55,10 @@ body {
     padding: 15px;
 }
 
-.content h2 {
+.content h1 {
+    text-align: center;
     margin-top: 0;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 .experience-list, .links-list {
